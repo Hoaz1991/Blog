@@ -1,105 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>html HolaMundo</title>
-	<style type="text/css">
-		table, th, td {
-              border: 1px solid black;
-		}
-
-
-	</style>
+	<title>Blog</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Neonderthaw&family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<table>
-		<thead>
-			<tr>
-			<th>Producto</th>
-			<th>Precio</th>
-		</tr>
-		<tr>
-			<td>Hola beats</td>
-			<td>Gratis</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Chanchito feliz</td>
-			<td>19,90$</td>
-		</tr>
-		<tr>
-			<td>Chanchito muy feliz</td>
-			<td>29,90$</td>
-		</tr>
-	</tbody>
-	<tfoot>
-		<td></td>
-		<td>Total 49.80$</td>
-	</tfoot>
-	</table>
-	<!-- ul es lista no ordenada-->
-	<ul>
-		<li>Elemento 1 </li>
-		<li>Elemento 2 </li>
-		<li>Elemento 3 </li>
-		<li>Elemento 4 </li>
-		<li>Elemento 5 </li>
-	</ul>
-	<!-- ul es lista ordenada-->
-	<ol>
-		<li>Elemento 1 </li>
-		<li>Elemento 2 </li>
-		<li>Elemento 3 </li>
-		<li>Elemento 4 </li>
-		<li>Elemento 5 </li>
-		<li>
-			<ol style="list-style-type: lower-alpha;">
-				<li>sub elemento 1</li>
-				<li>sub elemento 2</li>
-				<li>sub elemento 3</li>
-			</ol>
-		</li>
-	</ol>
-
-	<form action="/formulario" method="POST">
-		<label for="nombre">Nombre</label>
-		<input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre">
-		<br>
-		<label for="apellido">Apellido</label>
-		<input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido">
-		<br>
-		<label for="comentario">Comentario</label>
-		<br>
-		<textarea cols="40" rows="10" id="comentario" name="texto" placeholder="ingrese el texto">Este es un valor por defecto</textarea>
-		<button type="button">tipo boton</button>
-		<button type="reset">tipo reset</button>
-		<button type="submit">tipo submit</button>
-	</form>
-	<h1>Mi primer heading</h1>
-	<h2>Mi segundo heading</h2>
-	<h3>Mi tercer heading</h3>
-	<h4>Mi cuarto heading</h4>
-	<h5>Mi quinto heading</h5>
-	<h6>Mi sexto heading</h6>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<h2>titulo h2</h2>
-	<hr>
-	<p>Hola texto </p>
-	<p>Lorem ipsum dolor sit amet, <span style="color: blue">consectetur adipisicing elit</span>,<br> sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<!--comentario-->
-	<a target="_blank" href="https://www.google.com.co">ir a google.com</a>
-	<img src="img/13.jpg" width="400" height="300">
-	
+	<header>
+		<h1 id="titulo">Blog de Harold</h1>
+	</header>
+	<section class="container">
+       <article class="post">
+			<h2>titulo de mi post</h2>
+			<p>descripcion de mi post</p>
+			<img src="img/13.jpg" width="400">
+			<p>Texto de prueba</p>
+		</article>
+		<article class="post">
+			<h2>titulo de mi post 2</h2>
+			<p>descripcion de mi post 2</p>
+			<img src="img/14.jpg" width="400">
+			<p>Texto de prueba</p>
+		</article>
+		<article class="post">
+			<h2>titulo de mi post 3</h2>
+			<p>descripcion de mi post 3</p>
+			<img src="img/15.jpg" width="400">
+			<p>Texto de prueba</p>
+		</article>
+		</section>
+	<footer>
+		<section>
+		<a href="#titulo">hacia arriba</a>
+		<a href="mailto:ejemplo@gmail.com">contactame aquí</a>
+		</section>
+		<p>copyright 2022</p>
+		
+    </footer>
 
 </body>
 </html>
